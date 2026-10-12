@@ -157,6 +157,8 @@ jobs:
           cd ../..
           echo $i
         done
+        export FLORIDA_AAF="$(pwd)/subprojects/frida-core/src/anti-anti-frida.py"
+        echo "FLORIDA_AAF=$FLORIDA_AAF"
         cd ..
         
         ARCHES="android-arm android-arm64 android-x86 android-x86_64"
